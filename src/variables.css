@@ -1,0 +1,15 @@
+:root {
+  --bg-color: rgb(242, 242, 242);
+  --primary-color: rgb(173, 36, 25);
+  --secondary-color: rgb(234, 234, 234);
+  --grey-color: hsl(227, 12%, 61%);
+  --text-color: #111;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: rgb(15, 15, 15);
+    --secondary-color: rgb(22, 22, 22);
+    --text-color: #fff;
+  }
+}

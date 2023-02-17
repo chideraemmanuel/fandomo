@@ -1,0 +1,87 @@
+.categories {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.categories button {
+  display: inline-block;
+  /* background-color: var(--primary-color); */
+  color: var(--grey-color);
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 20px;
+  /* border-radius: 20px; */
+  font-size: 2rem;
+  background: transparent;
+}
+
+.categories button.active {
+  border-bottom: 5px solid var(--primary-color);
+  color: var(--text-color);
+}
+
+@media screen and (max-width: 2100px) {
+  .categories button {
+    padding: 17px;
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .categories button {
+    padding: 15px;
+    font-size: 1.3rem;
+  }
+
+  .categories button.active {
+    border-bottom: 4px solid var(--primary-color);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .categories {
+    gap: 35px;
+  }
+
+  .categories button {
+    padding: 13px;
+    font-size: 1.2rem;
+  }
+
+  .categories button.active {
+    border-bottom: 3px solid var(--primary-color);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .categories {
+    padding: 40px 0;
+    gap: 30px;
+  }
+
+  .categories button {
+    /* border-radius: 15px; */
+    padding: 10px;
+    font-size: 1.05rem;
+  }
+
+  .categories button.active {
+    border-bottom: 2px solid var(--primary-color);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .categories {
+    padding: 30px 0;
+    gap: 25px;
+  }
+
+  .categories button {
+    padding: 8px;
+    font-size: 1rem;
+  }
+}

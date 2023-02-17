@@ -1,0 +1,46 @@
+.upcoming-recommendations {
+  margin-top: 100px;
+}
+
+.upcoming-recommendations__header {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.upcoming-recommendations__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  column-gap: 30px;
+  row-gap: 50px;
+}
+
+@media screen and (max-width: 1536px) {
+  .upcoming-recommendations__header {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .upcoming-recommendations__header {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .upcoming-recommendations__header {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .upcoming-recommendations__header {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .upcoming-recommendations__header {
+    font-size: 1.1rem;
+  }
+}
