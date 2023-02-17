@@ -26,6 +26,12 @@ FANDOMO was built using the following technologies:
 - React Router (for navigating between pages)
 - React Icons
 
+* React Context API
+
+## Used Resources
+
+- [Jikan API](https://jikan.moe/)
+
 ## Contributing
 
 If you'd like to contribute to FANDOMO, please fork this repository and submit a pull request.
