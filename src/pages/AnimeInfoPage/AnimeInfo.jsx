@@ -17,6 +17,7 @@ const AnimeInfo = () => {
   const { url } = useContext(AnimeContext);
 
   useEffect(() => {
+    setAnimeInfo(null);
     fetch(`https://api.jikan.moe/v4/anime/${id}`)
       .then((response) => {
         return response.json();

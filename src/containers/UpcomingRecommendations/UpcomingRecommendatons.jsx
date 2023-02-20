@@ -21,6 +21,7 @@ const UpcomingRecommendatons = ({ id }) => {
   };
 
   useEffect(() => {
+    setUpcomingRecommendedAnimes(null)
     fetch(`https://api.jikan.moe/v4/top/anime?filter=upcoming&limit=10`)
       .then((response) => {
         return response.json();

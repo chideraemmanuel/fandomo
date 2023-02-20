@@ -15,6 +15,7 @@ const Recommendations = ({ id }) => {
   };
 
   useEffect(() => {
+    setRecommendedAnimes(null);
     fetch(`https://api.jikan.moe/v4/anime/${id}/recommendations`)
       .then((response) => {
         return response.json();
