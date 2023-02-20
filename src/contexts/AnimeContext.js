@@ -14,6 +14,7 @@ export const AnimeContextProvider = ({ children }) => {
   const [pageNumber, setPageNumber] = useState(1);
 
   useEffect(() => {
+    setAnimeList(null);
     fetch(url)
       .then((response) => {
         return response.json();

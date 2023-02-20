@@ -6,6 +6,7 @@ import NotFound from "../../components/NotFound/NotFound";
 import AnimeContext from "../../contexts/AnimeContext";
 import Recommendations from "../../containers/Recommendations/Recommendations";
 import UpcomingRecommendatons from "../../containers/UpcomingRecommendations/UpcomingRecommendatons";
+import Loader from "../../components/Loader/Loader";
 
 const AnimeInfo = () => {
   const { id } = useParams();
@@ -31,6 +32,8 @@ const AnimeInfo = () => {
 
   return (
     <div className="anime-info">
+      {!animeInfo && <Loader />}
+
       {error && (
         <NotFound
           title="Sorry, something went wrong. :("

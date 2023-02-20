@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import Card from "../../components/Card/Card";
+import Loader from "../../components/Loader/Loader";
 import NotFound from "../../components/NotFound/NotFound";
 import Pagination from "../../components/Pagination/Pagination";
 import AnimeContext from "../../contexts/AnimeContext";
@@ -11,6 +12,9 @@ const Cards = () => {
 
   return (
     <div className="container">
+      {!animeList && <Loader />}
+      {/* <Loader /> */}
+
       {error && (
         <NotFound
           title="Sorry, something went wrong."

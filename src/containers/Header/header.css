@@ -149,6 +149,10 @@ header::after {
     height: 80vh;
   }
 
+  header::after {
+    box-shadow: inset 50px 50px 120px #000, inset -50px -50px 120px #000;
+  }
+
   .header__text {
     height: calc(80vh - 120px);
   }

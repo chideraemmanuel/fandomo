@@ -21,6 +21,7 @@ const Header = () => {
       return;
       // console.log("empty search");
     } else if (e.keyCode === 13) {
+      e.target.blur();
       setUrl(`https://api.jikan.moe/v4/anime?q=${search}`);
       setResult(true);
       setPopularActive(false);
