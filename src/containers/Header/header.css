@@ -182,6 +182,10 @@ header::after {
     height: 70vh;
   }
 
+  header::after {
+    box-shadow: inset 20px 20px 70px #000, inset -20px -20px 70px #000;
+  }
+
   .header__logo {
     height: 100px;
   }
