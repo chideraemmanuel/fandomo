@@ -25,6 +25,7 @@ export const AnimeContextProvider = ({ children }) => {
       })
       .catch((error) => {
         setError(error.message);
+        console.log(error.message);
       });
   }, [url]);
 

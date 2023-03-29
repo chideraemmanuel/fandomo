@@ -12,7 +12,7 @@ const Cards = () => {
 
   return (
     <div className="container">
-      {!animeList && <Loader />}
+      {!animeList && !error && <Loader />}
       {/* <Loader /> */}
 
       {error && (

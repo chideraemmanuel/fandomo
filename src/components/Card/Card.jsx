@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 
 const Card = ({ imageInfo, imageSrc, title, year, animeId, onClick }) => {
   return (
-    <Link to={`/info/${animeId}`} className="card" onClick={onClick}>
+    <Link
+      to={`/info/${animeId}`}
+      className="card"
+      onClick={onClick}
+      title={title}
+    >
       <div className="card__image">
         <img src={imageSrc} alt={imageInfo} />
       </div>

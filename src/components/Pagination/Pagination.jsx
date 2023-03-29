@@ -6,6 +6,8 @@ import AnimeContext from "../../contexts/AnimeContext";
 const Pagination = () => {
   const { setUrl, popularActive, pageNumber, setPageNumber } =
     useContext(AnimeContext);
+  // let count = 1;
+  // const counter = {count: 1}
 
   const scrollUp = () => {
     window.scrollTo({
@@ -16,7 +18,8 @@ const Pagination = () => {
 
   const nextPage = () => {
     scrollUp();
-    setPageNumber(pageNumber + 1);
+    // ++count;
+    // setPageNumber(++pageNumber);
 
     if (popularActive) {
       setUrl(
@@ -31,7 +34,8 @@ const Pagination = () => {
 
   const prevPage = () => {
     scrollUp();
-    setPageNumber(pageNumber - 1);
+    // --count;
+    // setPageNumber(--pageNumber);
 
     if (popularActive) {
       setUrl(
@@ -48,7 +52,7 @@ const Pagination = () => {
     <div className="pagination">
       <button
         className="pagination__prev"
-        disabled={pageNumber === 1 ? true : false}
+        // disabled={count === 1 ? true : false}
         onClick={() => prevPage()}
       >
         <BsChevronLeft />
