@@ -4,7 +4,7 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import AnimeContext from "../../contexts/AnimeContext";
 
 const Pagination = () => {
-  const { setUrl, popularActive, pageNumber, setPageNumber } =
+  const { setUrl, popularActive, pageNumber /* setPageNumber */ } =
     useContext(AnimeContext);
   // let count = 1;
   // const counter = {count: 1}
